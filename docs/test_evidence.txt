@@ -1,0 +1,104 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\sumad\OneDrive\Desktop\Algoritmo de Cifrado
+plugins: cov-7.1.0
+collecting ... collected 59 items
+
+tests/test_cipher.py::TestAESGCM::test_encrypt_decrypt_roundtrip_text PASSED [  1%]
+tests/test_cipher.py::TestAESGCM::test_encrypt_decrypt_roundtrip_bytes PASSED [  3%]
+tests/test_cipher.py::TestAESGCM::test_tamper_detection PASSED           [  5%]
+tests/test_cipher.py::TestAESGCM::test_wrong_key PASSED                  [  6%]
+tests/test_cipher.py::TestAESGCM::test_invalid_key_length PASSED         [  8%]
+tests/test_cipher.py::TestAESGCM::test_invalid_iv_length PASSED          [ 10%]
+tests/test_cipher.py::TestAESGCM::test_encrypt_empty_plaintext PASSED    [ 11%]
+tests/test_cipher.py::TestAESGCM::test_unicode_text PASSED               [ 13%]
+tests/test_cipher.py::TestAESGCM::test_large_plaintext PASSED            [ 15%]
+tests/test_cli.py::TestCLICommands::test_cli_encrypt_text PASSED         [ 16%]
+tests/test_cli.py::TestCLICommands::test_cli_decrypt_text_roundtrip PASSED [ 18%]
+tests/test_cli.py::TestCLICommands::test_cli_hash_text PASSED            [ 20%]
+tests/test_cli.py::TestCLICommands::test_cli_verify_match PASSED         [ 22%]
+tests/test_cli.py::TestCLICommands::test_cli_verify_mismatch PASSED      [ 23%]
+tests/test_cli.py::TestCLICommands::test_cli_file_encrypt_decrypt_roundtrip PASSED [ 25%]
+tests/test_cli_main.py::TestCLIMain::test_encrypt_text_via_main PASSED   [ 27%]
+tests/test_cli_main.py::TestCLIMain::test_encrypt_file_via_main PASSED   [ 28%]
+tests/test_cli_main.py::TestCLIMain::test_decrypt_file_via_main PASSED   [ 30%]
+tests/test_cli_main.py::TestCLIMain::test_hash_text_via_main PASSED      [ 32%]
+tests/test_cli_main.py::TestCLIMain::test_verify_match_via_main PASSED   [ 33%]
+tests/test_cli_main.py::TestCLIMain::test_verify_mismatch_via_main PASSED [ 35%]
+tests/test_cli_main.py::TestCLIMain::test_error_file_not_found_via_main PASSED [ 37%]
+tests/test_cli_main.py::TestCLIMain::test_error_integrity_via_main PASSED [ 38%]
+tests/test_cli_main.py::TestCLIMain::test_error_validation_empty_password_via_main PASSED [ 40%]
+tests/test_cli_main.py::TestCLIMain::test_unknown_command_via_main PASSED [ 42%]
+tests/test_hash.py::TestSHA256::test_compute_sha256_returns_fingerprint PASSED [ 44%]
+tests/test_hash.py::TestSHA256::test_sha256_deterministic PASSED         [ 45%]
+tests/test_hash.py::TestSHA256::test_sha256_different_inputs PASSED      [ 47%]
+tests/test_hash.py::TestSHA256::test_verify_fingerprint_match PASSED     [ 49%]
+tests/test_hash.py::TestSHA256::test_verify_fingerprint_mismatch PASSED  [ 50%]
+tests/test_hash.py::TestSHA256::test_sha256_empty_data PASSED            [ 52%]
+tests/test_hash.py::TestSHA256::test_verify_fingerprint_empty_data PASSED [ 54%]
+tests/test_key_utils.py::TestPBKDF2::test_derive_key_returns_32_bytes PASSED [ 55%]
+tests/test_key_utils.py::TestPBKDF2::test_derive_key_deterministic PASSED [ 57%]
+tests/test_key_utils.py::TestPBKDF2::test_derive_key_different_salt PASSED [ 59%]
+tests/test_key_utils.py::TestPBKDF2::test_generate_salt_length PASSED    [ 61%]
+tests/test_key_utils.py::TestPBKDF2::test_generate_salt_randomness PASSED [ 62%]
+tests/test_key_utils.py::TestPBKDF2::test_derive_key_empty_password PASSED [ 64%]
+tests/test_key_utils.py::TestPBKDF2::test_derive_key_short_salt PASSED   [ 66%]
+tests/test_validators.py::TestInputValidators::test_validate_plaintext_string PASSED [ 67%]
+tests/test_validators.py::TestInputValidators::test_validate_plaintext_bytes PASSED [ 69%]
+tests/test_validators.py::TestInputValidators::test_validate_plaintext_empty PASSED [ 71%]
+tests/test_validators.py::TestInputValidators::test_validate_password_valid PASSED [ 72%]
+tests/test_validators.py::TestInputValidators::test_validate_password_empty PASSED [ 74%]
+tests/test_validators.py::TestInputValidators::test_validate_password_none PASSED [ 76%]
+tests/test_validators.py::TestFileHandler::test_validate_file_path_exists PASSED [ 77%]
+tests/test_validators.py::TestFileHandler::test_validate_file_path_not_found PASSED [ 79%]
+tests/test_validators.py::TestFileHandler::test_read_file_bytes PASSED   [ 81%]
+tests/test_validators.py::TestFileHandler::test_write_file_bytes PASSED  [ 83%]
+tests/test_validators.py::TestFileHandler::test_validate_file_path_none PASSED [ 84%]
+tests/test_validators.py::TestFileHandler::test_validate_file_path_directory PASSED [ 86%]
+tests/test_validators.py::TestFileHandler::test_validate_plaintext_invalid_type PASSED [ 88%]
+tests/test_validators.py::TestFileHandler::test_validate_plaintext_from_path PASSED [ 89%]
+tests/test_validators.py::TestFileHandler::test_validate_plaintext_empty_file PASSED [ 91%]
+tests/test_validators.py::TestFileHandler::test_validate_plaintext_nonexistent_path PASSED [ 93%]
+tests/test_validators.py::TestFileHandler::test_validate_password_bytes PASSED [ 94%]
+tests/test_validators.py::TestFileHandler::test_validate_password_invalid_type PASSED [ 96%]
+tests/test_validators.py::TestFileHandler::test_write_file_bytes_creates_parent_dirs PASSED [ 98%]
+tests/test_validators.py::TestFileHandler::test_read_file_bytes_not_found PASSED [100%]
+
+============================= 59 passed in 1.76s ==============================
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\sumad\OneDrive\Desktop\Algoritmo de Cifrado
+plugins: cov-7.1.0
+collected 59 items
+
+tests\test_cipher.py .........                                           [ 15%]
+tests\test_cli.py ......                                                 [ 25%]
+tests\test_cli_main.py ..........                                        [ 42%]
+tests\test_hash.py .......                                               [ 54%]
+tests\test_key_utils.py .......                                          [ 66%]
+tests\test_validators.py ....................                            [100%]
+
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.3-final-0 _______________
+
+Name                                               Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------
+src\algoritmo_cifrado\__init__.py                      2      0   100%
+src\algoritmo_cifrado\cipher\__init__.py               3      0   100%
+src\algoritmo_cifrado\cipher\aes_gcm.py               31      4    87%   72, 74, 83-85
+src\algoritmo_cifrado\cipher\exceptions.py            10      0   100%
+src\algoritmo_cifrado\cli\__init__.py                  3      0   100%
+src\algoritmo_cifrado\cli\commands.py                 75      5    93%   184-186, 214, 241
+src\algoritmo_cifrado\cli\main.py                     69     17    75%   88, 119-133, 137
+src\algoritmo_cifrado\hash_utils\__init__.py           2      0   100%
+src\algoritmo_cifrado\hash_utils\sha256.py            28      0   100%
+src\algoritmo_cifrado\key_utils\__init__.py            3      0   100%
+src\algoritmo_cifrado\key_utils\pbkdf2.py             13      0   100%
+src\algoritmo_cifrado\key_utils\salt.py                5      0   100%
+src\algoritmo_cifrado\validators\__init__.py           3      0   100%
+src\algoritmo_cifrado\validators\file_handler.py      33      9    73%   36, 57-60, 78-81
+src\algoritmo_cifrado\validators\input.py             31      0   100%
+--------------------------------------------------------------------------------
+TOTAL                                                311     35    89%
+============================= 59 passed in 1.84s ==============================

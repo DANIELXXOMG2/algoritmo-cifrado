@@ -2,6 +2,8 @@
 
 **Sistema de cifrado AES-GCM con verificación de integridad SHA-256**
 
+🔗 **Repositorio**: [https://github.com/DANIELXXOMG2/algoritmo-cifrado](https://github.com/DANIELXXOMG2/algoritmo-cifrado)
+
 Sistema académico que implementa cifrado simétrico AES-256-GCM con generación de huellas digitales SHA-256 y control de integridad.
 
 ## Características
